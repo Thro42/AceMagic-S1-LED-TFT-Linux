@@ -755,7 +755,7 @@
                "value": "device_info",
                "format": "{1}",
                "refresh": 1000,
-               "debug_frame": true,
+               "debug_frame": false,
                "font": "bold 20px Arial",
                "color": "#0400ff",
                "align": "center"
@@ -774,7 +774,7 @@
                "value": "device_info",
                "format": "{0}",
                "refresh": 1000,
-               "debug_frame": true,
+               "debug_frame": false,
                "font": "35px Arial",
                "color": "#ffffff",
                "align": "center"
@@ -787,15 +787,15 @@
                   "x": 0,
                   "y": 110,
                   "width": 170,
-                  "height": 32
+                  "height": 30
                },
-               "sensor": false,
-               "value": "",
-               "format": "nic1",
+               "sensor": true,
+               "value": "device_info",
+               "format": "nic1 {5}",
                "refresh": 1000,
-               "debug_frame": true,
-               "font": "15px Arial",
-               "color": "#9fcfd4",
+               "debug_frame": false,
+               "font": "18px Arial",
+               "color": "#77d998",
                "align": "left"
             },
             {
@@ -804,16 +804,16 @@
                "name": "text",
                "rect": {
                   "x": 0,
-                  "y": 150,
+                  "y": 140,
                   "width": 170,
-                  "height": 32
+                  "height": 30
                },
                "sensor": true,
                "value": "device_info",
-               "format": "{2}",
+               "format": "ip {6}",
                "refresh": 1000,
-               "debug_frame": true,
-               "font": "14px Arial",
+               "debug_frame": false,
+               "font": "15px Arial",
                "color": "#77d998",
                "align": "left"
             },
@@ -825,14 +825,14 @@
                   "x": 0,
                   "y": 190,
                   "width": 170,
-                  "height": 32
+                  "height": 30
                },
                "sensor": true,
                "value": "device_info",
-               "format": "{3}",
+               "format": "nic2 {7}",
                "refresh": 1000,
-               "debug_frame": true,
-               "font": "14px Arial",
+               "debug_frame": false,
+               "font": "18px Arial",
                "color": "#77d998",
                "align": "left"
             },
@@ -842,7 +842,26 @@
                "name": "text",
                "rect": {
                   "x": 0,
-                  "y": 270,
+                  "y": 220,
+                  "width": 170,
+                  "height": 30
+               },
+               "sensor": true,
+               "value": "device_info",
+               "format": "ip {8}",
+               "refresh": 1000,
+               "debug_frame": false,
+               "font": "15px Arial",
+               "color": "#7aaf95",
+               "align": "left"
+            },
+            {
+               "id": 7,
+               "group": 1,
+               "name": "text",
+               "rect": {
+                  "x": 0,
+                  "y": 288,
                   "width": 170,
                   "height": 32
                },
@@ -850,7 +869,7 @@
                "value": "device_info",
                "format": "up {4}",
                "refresh": 1000,
-               "debug_frame": true,
+               "debug_frame": false,
                "font": "18px Arial",
                "color": "#5d9a18",
                "align": "center"
@@ -862,6 +881,6 @@
             "intensity": 3,
             "speed": 3
          }
-     }
+      }
    ]
 }
