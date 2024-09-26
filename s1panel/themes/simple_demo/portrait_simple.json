@@ -734,6 +734,134 @@
             "intensity": 3,
             "speed": 3
          }
-      }
+      },
+      {
+         "id": 4,
+         "name": "Screen 4 Dev. Info",
+         "background": "#000000",
+         "duartion": 0,
+         "widgets": [
+            {
+               "id": 1,
+               "group": 1,
+               "name": "text",
+               "rect": {
+                  "x": 0,
+                  "y": 10,
+                  "width": 170,
+                  "height": 32
+               },
+               "sensor": true,
+               "value": "device_info",
+               "format": "{1}",
+               "refresh": 1000,
+               "debug_frame": true,
+               "font": "bold 20px Arial",
+               "color": "#0400ff",
+               "align": "center"
+            },
+            {
+               "id": 2,
+               "group": 1,
+               "name": "text",
+               "rect": {
+                  "x": 0,
+                  "y": 50,
+                  "width": 170,
+                  "height": 40
+               },
+               "sensor": true,
+               "value": "device_info",
+               "format": "{0}",
+               "refresh": 1000,
+               "debug_frame": true,
+               "font": "35px Arial",
+               "color": "#ffffff",
+               "align": "center"
+            },
+            {
+               "id": 3,
+               "group": 1,
+               "name": "text",
+               "rect": {
+                  "x": 0,
+                  "y": 110,
+                  "width": 170,
+                  "height": 32
+               },
+               "sensor": false,
+               "value": "",
+               "format": "nic1",
+               "refresh": 1000,
+               "debug_frame": true,
+               "font": "15px Arial",
+               "color": "#9fcfd4",
+               "align": "left"
+            },
+            {
+               "id": 4,
+               "group": 1,
+               "name": "text",
+               "rect": {
+                  "x": 0,
+                  "y": 150,
+                  "width": 170,
+                  "height": 32
+               },
+               "sensor": true,
+               "value": "device_info",
+               "format": "{2}",
+               "refresh": 1000,
+               "debug_frame": true,
+               "font": "14px Arial",
+               "color": "#77d998",
+               "align": "left"
+            },
+            {
+               "id": 5,
+               "group": 1,
+               "name": "text",
+               "rect": {
+                  "x": 0,
+                  "y": 190,
+                  "width": 170,
+                  "height": 32
+               },
+               "sensor": true,
+               "value": "device_info",
+               "format": "{3}",
+               "refresh": 1000,
+               "debug_frame": true,
+               "font": "14px Arial",
+               "color": "#77d998",
+               "align": "left"
+            },
+            {
+               "id": 6,
+               "group": 1,
+               "name": "text",
+               "rect": {
+                  "x": 0,
+                  "y": 270,
+                  "width": 170,
+                  "height": 32
+               },
+               "sensor": true,
+               "value": "device_info",
+               "format": "up {4}",
+               "refresh": 1000,
+               "debug_frame": true,
+               "font": "18px Arial",
+               "color": "#5d9a18",
+               "align": "center"
+            }
+         ],
+         "duration": 60000,
+         "led_config": {
+            "theme": 3,
+            "intensity": 3,
+            "speed": 3
+         }
+     }
    ]
 }
