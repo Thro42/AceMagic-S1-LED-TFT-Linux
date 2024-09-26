@@ -28,7 +28,7 @@
          "module": "sensors/cpu_temp.js",
          "config": {
             "max_points": 300,
-            "fahrenheit": true
+            "fahrenheit": false
          }
       },
       {
