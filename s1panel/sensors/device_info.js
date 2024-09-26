@@ -65,6 +65,7 @@ function sample(rate, format) {
             _last_sampled = Math.floor(Number(process.hrtime.bigint()) / 1000000);
             _date = new Date();
             _uptime = os.uptime();
+            _ipAddresses = getIPArry();
         }
 
         var _output = format.replace(/{(\d+)}/g, function (match, number) { 
@@ -84,24 +85,24 @@ function sample(rate, format) {
                     return _ipadr2;
                 case '4':
                     return _uptimestr;
-                case '5': 
-                    return _ipAddresses[0].name;
-                case '6': 
-                    return _ipAddresses[0].value;
-                case '7': 
+                case '5':
+                    return _ipAddresses[0].name + '';
+                case '6':
+                    return _ipAddresses[0].value + '';
+                case '7':
                     let _nic2 = '';
                     if (_ipAddresses.length > 1) {
-                        _nic2 = _ipAddresses[1].name;
+                        _nic2 = _ipAddresses[1].name + '';
                     }
                     return _nic2;
-                case '8': 
+                case '8':
                     let _ip2 = '';
                     if (_ipAddresses.length > 1) {
                         _ip2 = _ipAddresses[1].value;
                     }
                     return _ip2;
                 default:
-                return 'undefined'; 
+                return 'undefined';
             }
         }); 
 
