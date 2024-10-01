@@ -784,17 +784,17 @@
                "group": 1,
                "name": "text",
                "rect": {
-                  "x": 0,
+                  "x": 35,
                   "y": 110,
-                  "width": 170,
+                  "width": 135,
                   "height": 30
                },
                "sensor": true,
                "value": "device_info",
-               "format": "nic1 {5}",
+               "format": "1 {5}",
                "refresh": 1000,
                "debug_frame": false,
-               "font": "18px Arial",
+               "font": "20px Arial",
                "color": "#77d998",
                "align": "left"
             },
@@ -803,14 +803,14 @@
                "group": 1,
                "name": "text",
                "rect": {
-                  "x": 0,
+                  "x": 38,
                   "y": 140,
-                  "width": 170,
+                  "width": 132,
                   "height": 30
                },
                "sensor": true,
                "value": "device_info",
-               "format": "ip {6}",
+               "format": "{6}",
                "refresh": 1000,
                "debug_frame": false,
                "font": "15px Arial",
@@ -822,17 +822,17 @@
                "group": 1,
                "name": "text",
                "rect": {
-                  "x": 0,
+                  "x": 35,
                   "y": 190,
-                  "width": 170,
+                  "width": 135,
                   "height": 30
                },
                "sensor": true,
                "value": "device_info",
-               "format": "nic2 {7}",
+               "format": "2 {7}",
                "refresh": 1000,
                "debug_frame": false,
-               "font": "18px Arial",
+               "font": "20px Arial",
                "color": "#77d998",
                "align": "left"
             },
@@ -841,18 +841,18 @@
                "group": 1,
                "name": "text",
                "rect": {
-                  "x": 0,
+                  "x": 38,
                   "y": 220,
-                  "width": 170,
+                  "width": 132,
                   "height": 30
                },
                "sensor": true,
                "value": "device_info",
-               "format": "ip {8}",
+               "format": "{8}",
                "refresh": 1000,
                "debug_frame": false,
                "font": "15px Arial",
-               "color": "#7aaf95",
+               "color": "#77d998",
                "align": "left"
             },
             {
@@ -873,6 +873,42 @@
                "font": "18px Arial",
                "color": "#5d9a18",
                "align": "center"
+            },
+            {
+               "id": 8,
+               "group": 1,
+               "name": "iconify",
+               "rect": {
+                  "x": 0,
+                  "y": 110,
+                  "width": 40,
+                  "height": 40
+               },
+               "sensor": false,
+               "value": "ip-network",
+               "format": "",
+               "refresh": 1000,
+               "debug_frame": false,
+               "iconSet": "mdi",
+               "color": "#17cfa6"
+            },
+            {
+               "id": 9,
+               "group": 1,
+               "name": "iconify",
+               "rect": {
+                  "x": 0,
+                  "y": 190,
+                  "width": 40,
+                  "height": 40
+               },
+               "sensor": false,
+               "value": "ip-network",
+               "format": "",
+               "refresh": 1000,
+               "debug_frame": false,
+               "iconSet": "mdi",
+               "color": "#17cfa6"
             }
          ],
          "duration": 60000,
@@ -882,5 +918,5 @@
             "speed": 3
          }
       }
-   ]
+  ]
 }
