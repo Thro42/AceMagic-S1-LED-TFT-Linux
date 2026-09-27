@@ -5,10 +5,10 @@
       {
          "id": 1,
          "name": "Screen 1",
-         "background": "#282828",
+         "background": "#000000",
          "duration": 60000,
          "led_config": {
-            "theme": 1,
+            "theme": 4,
             "intensity": 3,
             "speed": 3
          },
@@ -212,6 +212,25 @@
                "font": "13px Arial",
                "color": "#47b320",
                "align": "right"
+            },
+            {
+               "id": 12,
+               "group": 1,
+               "name": "text",
+               "rect": {
+                  "x": 0,
+                  "y": 310,
+                  "width": 50,
+                  "height": 10
+               },
+               "sensor": true,
+               "value": "network_enp4s0",
+               "format": "{17}",
+               "refresh": 1000,
+               "debug_frame": false,
+               "font": "10px Arial",
+               "color": "#47b320",
+               "align": "center"
             }
          ]
       },
@@ -469,7 +488,7 @@
                   "height": 35
                },
                "sensor": true,
-               "value": "network_enp2s0",
+               "value": "network_enp4s0",
                "format": "{2}",
                "refresh": 1000,
                "debug_frame": false,
@@ -489,7 +508,7 @@
                   "height": 10
                },
                "sensor": true,
-               "value": "network_enp2s0",
+               "value": "network_enp4s0",
                "format": "{1}",
                "refresh": 1000,
                "debug_frame": false,
@@ -530,7 +549,7 @@
                   "height": 15
                },
                "sensor": true,
-               "value": "network_enp2s0",
+               "value": "network_enp4s0",
                "format": "{15}",
                "refresh": 1000,
                "debug_frame": false,
@@ -549,7 +568,7 @@
                   "height": 35
                },
                "sensor": true,
-               "value": "network_enp2s0",
+               "value": "network_enp4s0",
                "format": "{5}",
                "refresh": 1000,
                "debug_frame": false,
@@ -569,7 +588,7 @@
                   "height": 10
                },
                "sensor": true,
-               "value": "network_enp2s0",
+               "value": "network_enp4s0",
                "format": "{4}",
                "refresh": 1000,
                "debug_frame": false,
@@ -610,7 +629,7 @@
                   "height": 15
                },
                "sensor": true,
-               "value": "network_enp2s0",
+               "value": "network_enp4s0",
                "format": "{16}",
                "refresh": 1000,
                "debug_frame": false,
@@ -918,5 +937,5 @@
             "speed": 3
          }
       }
-  ]
+   ]
 }
